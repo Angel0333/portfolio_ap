@@ -7,7 +7,8 @@ function Home() {
     <>
       <Navbar />
       <div>
-        <h1>Hola soy el Home</h1>
+        
+       
       </div>
 
       <Footer />
