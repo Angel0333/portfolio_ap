@@ -8,7 +8,7 @@ function Navbar() {
         <div className="w-full px-6 flex justify-between items-center h-20 ">
           {/* Logo */}
           <a href="#">
-            <img src={logo} alt="Logo" className="h-12 w-12 rounded-full object-cover " />
+            <img src={logo} alt="Logo" className="transition-all duration-300 transform hover:scale-125 h-12 w-12 rounded-full object-cover " />
           </a>
 
           {/* Botón hamburguesa */}
@@ -33,16 +33,16 @@ function Navbar() {
 
           {/* Links en desktop */}
           <div className="hidden md:flex space-x-6">
-            <a href="#inicio" className="text-amber-50 hover:text-blue-600">
+            <a href="#inicio" className="text-amber-50 hover:text-blue-600 transition-all duration-300 transform hover:scale-110">
               Inicio
             </a>
-            <a href="#sobreMI" className="text-amber-50 hover:text-blue-600">
-              Sobre mí
+            <a href="#servicios" className="text-amber-50 hover:text-blue-600 transition-all duration-300 transform hover:scale-110">
+              Servicios
             </a>
-            <a href="#habilidades" className="text-amber-50 hover:text-blue-600">
+            <a href="#habilidades" className="text-amber-50 hover:text-blue-600 transition-all duration-300 transform hover:scale-110">
               Habilidades
             </a>
-            <a href="#Contacto" className="text-amber-50 hover:text-blue-600">
+            <a href="#Contacto" className="text-amber-50 hover:text-blue-600 transition-all duration-300 transform hover:scale-110">
               Contacto
             </a>
           </div>
@@ -54,7 +54,7 @@ function Navbar() {
             <a href="#inicio" className="block text-amber-50 hover:text-blue-600">
               Inicio
             </a>
-            <a href="#sobreMI" className="block text-amber-50 hover:text-blue-600">
+            <a href="#servicios" className="block text-amber-50 hover:text-blue-600">
               Sobre mí
             </a>
             <a href="#habilidades" className="block text-amber-50 hover:text-blue-600">
