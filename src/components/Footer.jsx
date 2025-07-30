@@ -4,8 +4,8 @@ function Footer() {
 
   return (
    
-      <footer className="bg-blue-950 text-white fixed bottom-0 left-0 right-0 py-4 px-6 shadow-md w-full">
-        <div className="w-full  mx-auto flex flex-col md:flex-row items-center justify-between">
+      <footer className="bg-blue-950 text-white w-full py-4 px-6">
+        <div className="max-w-7xl w-full mx-auto flex flex-col md:flex-row items-center justify-between">
           {/* izquierda */}
           <div className="mb-2 md:mb-0">
             <p className="text-sm">&copy; 2025 Angel Pastrana</p>
