@@ -6,7 +6,7 @@ function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar />
-      <section className="bg-white px-6 pt-20 pb-24 ">
+      <section className="bg-white px-6 pt-20 pb-24 overflow-x-hidden">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
 
           {/* Izquierda: Nombre + texto */}
@@ -20,21 +20,36 @@ function Home() {
           {/* Derecha: Foto */}
           <div className="relative w-72 h-72 flex items-center justify-center">
             {/* Anillo giratorio */}
-            <div className="absolute w-[300px] h-[300px] rounded-full border-4 border-blue-500 border-t-transparent animate-spin"></div>
+            <div className="absolute  w-72 h-72  rounded-full border-6 border-blue-500 border-t-transparent animate-spin [animation-duration:3s] "></div>
 
             {/* Foto */}
             <img
               src={miFoto}
               alt="Ángel Pastrana"
-              className="w-64 h-64 rounded-full object-cover shadow-lg z-10 transition-all duration-300 transform hover:scale-110"
+              className="w-64 h-64 rounded-full object-cover shadow-lg z-10 transition-all duration-300 transform hover:scale-110 active:scale-110"
             />
           </div>
 
+          
+
 
         </div>
+        {/* boton de descarga CV */}
+          <div className="flex justify-center mt-10 pb-5">
+            <a 
+            href="/Angel_Daniel_Pastrana_CV.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          
+            className="bg-blue-600 text-white font-semibold px-6 py-3 rounded-full shadow-md transition-all duration-300 hover:bg-blue-800 hover:scale-105 active:scale-105"
+            >
+              Descargar CV
+            </a>
+
+          </div>
       </section>
   
-      <Footer className="bg-blue-950 text-white sticky bottom-0 py-4 px-6 shadow-md w-full" />
+      <Footer />
 
    
 

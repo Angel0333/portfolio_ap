@@ -8,7 +8,7 @@ function Navbar() {
         <div className="w-full px-6 flex justify-between items-center h-20 ">
           {/* Logo */}
           <a href="#">
-            <img src={logo} alt="Logo" className="transition-all duration-300 transform hover:scale-125 h-12 w-12 rounded-full object-cover " />
+            <img src={logo} alt="Logo" className="transition-all duration-300 transform hover:scale-125 active:scale-125 h-12 w-12 rounded-full object-cover " />
           </a>
 
           {/* Botón hamburguesa */}
