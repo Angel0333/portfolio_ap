@@ -7,19 +7,19 @@ function Footer() {
       <footer className="bg-blue-950 fixed bottom-0 left-0 right-0 text-white w-full py-4 px-6 z-50">
         <div className="max-w-7xl w-full mx-auto flex flex-col md:flex-row items-center justify-between">
           {/* izquierda */}
-          <div className="mb-2 md:mb-0">
+          <div className="mb-2 md:mb-0 hidden md:block">
             <p className="text-sm">&copy; 2025 Angel Pastrana</p>
           </div>
 
           {/* centro */}
-          <div className="mb-2 md:mb-0">
+          <div className="mb-2 md:mb-0 hidden md:block">
             <a href="#">
               <img src={logo} alt="Logo" className="transition-all duration-300 transform hover:scale-125 active:scale-125 h-12 w-12 rounded-full object-cover " />
             </a>
           </div>
 
           {/* derecha */}
-          <div className="flex space-x-4 text-xl">
+          <div className="flex space-x-8 md:space-x-4 text-xl">
             <a href="https://www.linkedin.com/in/angel-pastrana-b7856223b/" target="_blank" rel="noopener noreferrer" className="transition-all duration-300 transform hover:scale-125 active:scale-125 hover:text-blue-400 ">
               <FaLinkedin />
             </a>
