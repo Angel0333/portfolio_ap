@@ -6,7 +6,7 @@ function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar />
-      <section className="bg-white px-6 pt-20 pb-24 overflow-x-hidden">
+      <section className="bg-white px-6 pt-28 pb-28 overflow-x-hidden">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
 
           {/* Izquierda: Nombre + texto */}
