@@ -1,5 +1,7 @@
 import { useState } from "react";
 import logo from '../assets/logo.png'
+import { Link } from 'react-router-dom'
+
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
@@ -33,36 +35,31 @@ function Navbar() {
 
           {/* Links en desktop */}
           <div className="hidden md:flex space-x-6">
-            <a href="#inicio" className="text-amber-50 hover:text-blue-600 transition-all duration-300 transform hover:scale-110">
-              Inicio
-            </a>
-            <a href="#servicios" className="text-amber-50 hover:text-blue-600 transition-all duration-300 transform hover:scale-110">
-              Servicios
-            </a>
-            <a href="#habilidades" className="text-amber-50 hover:text-blue-600 transition-all duration-300 transform hover:scale-110">
-              Habilidades
-            </a>
-            <a href="#Contacto" className="text-amber-50 hover:text-blue-600 transition-all duration-300 transform hover:scale-110">
-              Contacto
-            </a>
+            <Link to="/" className="text-amber-50 hover:text-blue-600 transition-all duration-300 transform hover:scale-110">Inicio</Link>
+            
+            <Link to="/service" className="text-amber-50 hover:text-blue-600 transition-all duration-300 transform hover:scale-110">Servicios</Link>
+            
+            <Link className="text-amber-50 hover:text-blue-600 transition-all duration-300 transform hover:scale-110">Habilidades</Link>
+
+            <Link className="text-amber-50 hover:text-blue-600 transition-all duration-300 transform hover:scale-110">Contacto</Link>
           </div>
         </div>
 
         {/* Menú móvil */}
         {isOpen && (
           <div className="md:hidden px-4 pb-4 space-y-2  bg-blue-950  shadow">
-            <a href="#inicio" className="block text-amber-50 hover:text-blue-600">
+            <Link to="/" className="block text-amber-50 hover:text-blue-600">
               Inicio
-            </a>
-            <a href="#servicios" className="block text-amber-50 hover:text-blue-600">
-              Sobre mí
-            </a>
-            <a href="#habilidades" className="block text-amber-50 hover:text-blue-600">
+            </Link>
+            <Link to="/service" className="block text-amber-50 hover:text-blue-600">
+              Servicio
+            </Link>
+            <Link  className="block text-amber-50 hover:text-blue-600">
               Habilidades
-            </a>
-            <a href="#Contacto" className="block text-amber-50 hover:text-blue-600">
+            </Link>
+            <Link  className="block text-amber-50 hover:text-blue-600">
               Contacto
-            </a>
+            </Link>
           </div>
         )}
       </nav>
